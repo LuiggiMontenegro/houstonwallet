@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Houston Bank</title>
+    <link rel="stylesheet" href="transfers.css" />
+  </head>
+  <body class="dash">
+    <nav class="dash-item nav">
+      <section class="nav-item logo">
+        <img
+          src="../../resources/images/logo.png"
+          alt=""
+          width="50"
+          height="50"
+        />
+      </section>
+      <section class="nav-item menu">
+        <ul>
+          <li><a href="../dashboard"><img src="../../resources/vectors/principal.svg">Panel Principal</a></li>
+          <li><a href="../cards"><img src="../../resources/vectors/tarjeta.svg">Mi Tarjeta</a></li>
+          <li><img src="../../resources/vectors/cuentas.svg">Cuentas</li>
+          <li><img src="../../resources/vectors/inversiones.svg">Inversiones</li>
+          <li class="selected"><img src="../../resources/vectors/transferencias.svg">Transferencias</li>
+          <li><img src="../../resources/vectors/ahorros.svg">Ahorros</li>
+          <li class="divider"><hr/></li>
+          <li><img src="../../resources/vectors/soporte.svg">Soporte</li>
+          <li><img src="../../resources/vectors/configuraciones.svg">Configuraciones</li>
+        </ul>
+      </section>
+      <section class="nav-item footer">
+        <img src="../../resources/images/modo_oscuro.png"/>
+        <a href="../login"><img src="../../resources/vectors/logout.svg">Log out</a>
+      </section>
+    </nav>
+    <section class="dash-item">
+      <header class="header">
+        <h3 class="header-left">Dashboard</h3>
+        <section class="header-right">
+          <div class="search">
+            <img src="../../resources/vectors/lupa.svg">  
+          </div>
+          <img src="../../resources/vectors/alarma.svg">
+          <img src="../../resources/images/perfil.png">
+          <span>Brian Montenegro</span>
+          <img class="chevron" src="../../resources/vectors/chevron.svg">
+        </section>
+      </header>
+      <main class="main">
+        <section class="transfers">
+          <section class="header">
+            <div class="header-left">
+              <h1 class="title">Historial de Transferencias</h1>
+            </div>
+            <div class="header-right">
+              <div class="selector">
+                <img src="../../resources/vectors/calendario.svg">
+                <span>Sep 11 - Sep 15</span>
+                <img src="../../resources/vectors/chevron.svg">
+              </div>
+              <img src="../../resources/vectors/puntos.svg">
+            </div>
+          </section>
+          <table>
+            <tr>
+              <th>Enviado a</th>
+              <th>N° Operación</th>
+              <th>Cantidad</th>
+              <th>Fecha</th>
+              <th>Desde</th>
+            </tr>
+            <tr>
+              <td>Linux Torvals</td>
+              <td>007165981</td>
+              <td>S/9000.00</td>
+              <td>15/09/23</td>
+              <td>Cuenta corriente</td>
+            </tr>
+            <tr>
+              <td>Steve Jobs</td>
+              <td>008349875</td>
+              <td>S/2500.00</td>
+              <td>14/09/23</td>
+              <td>Cuenta corriente</td>
+            </tr>
+            <tr>
+              <td>Dennis Ritchie</td>
+              <td>008329675</td>
+              <td>S/3580.00</td>
+              <td>14/09/23</td>
+              <td>Cuenta corriente</td>
+            </tr>
+            <tr>
+              <td>Steve Wozniak</td>
+              <td>008549896</td>
+              <td>S/4300.00</td>
+              <td>12/09/23</td>
+              <td>Cuenta corriente</td>
+            </tr>
+            <tr>
+              <td>Bill Gates</td>
+              <td>008343845</td>
+              <td>S/3800.00</td>
+              <td>11/09/23</td>
+              <td>Cuenta corriente</td>
+            </tr>
+            <tr>
+              <td>Diego Maradona</td>
+              <td>009949875</td>
+              <td>S/8200.00</td>
+              <td>11/09/23</td>
+              <td>Cuenta corriente</td>
+            </tr>
+          </table>
+        </section>
+      </main>
+    </section>
+  </body>
+</html>
