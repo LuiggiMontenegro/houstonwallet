@@ -486,6 +486,8 @@ body.dash {
     }
   }
 
+  /* ================================== Main Dashboard ================================== */
+
   .main.dashboard {
     display: flex;
     flex-wrap: wrap;
@@ -509,11 +511,39 @@ body.dash {
     }
   }
 
+  /* ======== Media Querys ======== */
+
+  @media (width < 1270px) {
+    .main.dashboard {
+      & div {
+        width: calc(40rem + 20px);
+        &:first-child {
+          width: calc(40rem + 20px);
+        }
+      }
+    }
+  }
+
+  @media (width < 970px) {
+    .main.dashboard {
+      & div {
+        width: calc(30rem + 20px);
+        &:first-child {
+          width: calc(30rem + 20px);
+        }
+      }
+    }
+  }
+
+  /* ================================== Main Card ================================== */
+
   .main.card {
     .cards{
       margin: 1.25rem;
       padding: 1.25rem;
       display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
       justify-content: space-evenly;
       .cardx{
         background-color: #2a3347ff;
@@ -546,6 +576,21 @@ body.dash {
 
   }
 
+    /* ======== Media Querys ======== */
+    @media (width < 970px) {
+      .main.card {
+        .cards{
+          .cardx{
+            .card-type{
+              width: 400px;
+            }
+          }
+        }
+      }
+    }
+
+  /* ================================== Main Transfer ================================== */
+
   .main.transfer {
     .transfers{
       margin: 1.25rem;
@@ -568,21 +613,35 @@ body.dash {
         }
       }
 
-      & table {
-        border-collapse: collapse;
-        width: 100%;
-      }
-
-      & td, & th{
-        border-bottom: 1px solid #3f4147ff;
-        text-align: left;
-        padding: 8px;
-        height: 2rem;
-      }
-
-      & tr:nth-child(even) {
-        background-color: #19222eff;
+      .values{
+        & table {
+          border-collapse: collapse;
+          width: 100%;
+        }
+  
+        & td, & th{
+          border-bottom: 1px solid #3f4147ff;
+          text-align: left;
+          padding: 8px;
+          height: 2rem;
+        }
+  
+        & tr:nth-child(even) {
+          background-color: #19222eff;
+        }
       }
     }
   }
+
+  /* ======== Media Querys ======== */
+  @media (width < 970px) {
+    .main.transfer {
+      .transfers{
+        .values{
+          /*overflow-y: scroll;*/
+        }
+      }
+    }
+  }
+
 }

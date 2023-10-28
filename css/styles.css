@@ -246,6 +246,12 @@ body.dash {
   height: 100vh;
   background-color: #0f1219;
   color: #fafafa;
+  /* ================================== Main Dashboard ================================== */
+  /* ======== Media Querys ======== */
+  /* ================================== Main Card ================================== */
+  /* ======== Media Querys ======== */
+  /* ================================== Main Transfer ================================== */
+  /* ======== Media Querys ======== */
 }
 body.dash .dash-item {
   flex-grow: 1;
@@ -380,10 +386,28 @@ body.dash .main.dashboard div:first-child {
   height: 20rem;
   width: calc(60rem + 20px);
 }
+@media (width < 1270px) {
+  body.dash .main.dashboard div {
+    width: calc(40rem + 20px);
+  }
+  body.dash .main.dashboard div:first-child {
+    width: calc(40rem + 20px);
+  }
+}
+@media (width < 970px) {
+  body.dash .main.dashboard div {
+    width: calc(30rem + 20px);
+  }
+  body.dash .main.dashboard div:first-child {
+    width: calc(30rem + 20px);
+  }
+}
 body.dash .main.card .cards {
   margin: 1.25rem;
   padding: 1.25rem;
   display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
   justify-content: space-evenly;
 }
 body.dash .main.card .cards .cardx {
@@ -412,6 +436,11 @@ body.dash .main.card .title-debit {
 body.dash .main.card .title-credit {
   color: #a19419;
 }
+@media (width < 970px) {
+  body.dash .main.card .cards .cardx .card-type {
+    width: 400px;
+  }
+}
 body.dash .main.transfer .transfers {
   margin: 1.25rem;
   padding: 1.25rem;
@@ -431,18 +460,23 @@ body.dash .main.transfer .transfers .header-right .selector {
 body.dash .main.transfer .transfers .header-right .selector img:last-child {
   filter: invert(100%) sepia(0%) saturate(7469%) hue-rotate(161deg) brightness(113%) contrast(103%);
 }
-body.dash .main.transfer .transfers table {
+body.dash .main.transfer .transfers .values table {
   border-collapse: collapse;
   width: 100%;
 }
-body.dash .main.transfer .transfers td, body.dash .main.transfer .transfers th {
+body.dash .main.transfer .transfers .values td, body.dash .main.transfer .transfers .values th {
   border-bottom: 1px solid #3f4147;
   text-align: left;
   padding: 8px;
   height: 2rem;
 }
-body.dash .main.transfer .transfers tr:nth-child(even) {
+body.dash .main.transfer .transfers .values tr:nth-child(even) {
   background-color: #19222e;
+}
+@media (width < 970px) {
+  body.dash .main.transfer .transfers .values {
+    /*overflow-y: scroll;*/
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
