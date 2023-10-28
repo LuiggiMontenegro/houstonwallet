@@ -355,14 +355,14 @@ body.dash .header-right .search {
   box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.4) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   cursor: pointer;
 }
-body.dash .main {
+body.dash .main.dashboard {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   align-content: flex-start;
   justify-content: center;
 }
-body.dash .main div {
+body.dash .main.dashboard div {
   height: 20rem;
   width: 30rem;
   background-color: #2a3347;
@@ -371,9 +371,67 @@ body.dash .main div {
   justify-content: center;
   align-items: center;
 }
-body.dash .main div:first-child {
+body.dash .main.dashboard div:first-child {
   height: 20rem;
   width: calc(60rem + 20px);
+}
+body.dash .main.card .cards {
+  margin: 1.25rem;
+  padding: 1.25rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+body.dash .main.card .cards .cardx {
+  background-color: #2a3347;
+  border-radius: 10px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+body.dash .main.card .cards .cardx .titles,
+body.dash .main.card .cards .cardx .values {
+  display: flex;
+  justify-content: space-between;
+}
+body.dash .main.card .cards .cardx .titles {
+  color: #A3A3A3;
+}
+body.dash .main.card .cards .cardx .values {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+body.dash .main.transfer .transfers {
+  margin: 1.25rem;
+  padding: 1.25rem;
+  background-color: #2a3347;
+  border-radius: 10px;
+}
+body.dash .main.transfer .transfers .header-right .selector {
+  display: inline-flex;
+  padding: 0.25rem 0.5rem;
+  align-items: center;
+  gap: 0.75rem;
+  border-radius: 0.25rem;
+  background-color: #677797;
+  height: 1.63rem;
+  cursor: pointer;
+}
+body.dash .main.transfer .transfers .header-right .selector img:last-child {
+  filter: invert(100%) sepia(0%) saturate(7469%) hue-rotate(161deg) brightness(113%) contrast(103%);
+}
+body.dash .main.transfer .transfers table {
+  border-collapse: collapse;
+  width: 100%;
+}
+body.dash .main.transfer .transfers td, body.dash .main.transfer .transfers th {
+  border-bottom: 1px solid #3f4147;
+  text-align: left;
+  padding: 8px;
+  height: 2rem;
+}
+body.dash .main.transfer .transfers tr:nth-child(even) {
+  background-color: #19222e;
 }
 
 /*# sourceMappingURL=styles.css.map */
