@@ -469,13 +469,33 @@ body.dash .main.transfer .transfers .values td, body.dash .main.transfer .transf
   text-align: left;
   padding: 8px;
   height: 2rem;
+  white-space: nowrap;
 }
 body.dash .main.transfer .transfers .values tr:nth-child(even) {
   background-color: #19222e;
 }
-@media (width < 970px) {
+@media (width < 870px) {
   body.dash .main.transfer .transfers .values {
-    /*overflow-y: scroll;*/
+    overflow-x: scroll;
+    width: 525px;
+  }
+}
+@media (width < 845px) {
+  body.dash .main.transfer .transfers .values {
+    overflow-x: scroll;
+    width: 500px;
+  }
+}
+@media (width < 820px) {
+  body.dash .main.transfer .transfers .values {
+    overflow-x: scroll;
+    width: 475px;
+  }
+}
+@media (width < 795px) {
+  body.dash .main.transfer .transfers .values {
+    overflow-x: scroll;
+    width: 450px;
   }
 }
 

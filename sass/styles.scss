@@ -624,6 +624,7 @@ body.dash {
           text-align: left;
           padding: 8px;
           height: 2rem;
+          white-space: nowrap;
         }
   
         & tr:nth-child(even) {
@@ -634,11 +635,45 @@ body.dash {
   }
 
   /* ======== Media Querys ======== */
-  @media (width < 970px) {
+  @media (width < 870px) {
     .main.transfer {
       .transfers{
         .values{
-          /*overflow-y: scroll;*/
+          overflow-x: scroll;
+          width: 525px;
+        }
+      }
+    }
+  }
+
+  @media (width < 845px) {
+    .main.transfer {
+      .transfers{
+        .values{
+          overflow-x: scroll;
+          width: 500px;
+        }
+      }
+    }
+  }
+
+  @media (width < 820px) {
+    .main.transfer {
+      .transfers{
+        .values{
+          overflow-x: scroll;
+          width: 475px;
+        }
+      }
+    }
+  }
+  
+  @media (width < 795px) {
+    .main.transfer {
+      .transfers{
+        .values{
+          overflow-x: scroll;
+          width: 450px;
         }
       }
     }
