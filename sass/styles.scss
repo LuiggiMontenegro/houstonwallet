@@ -76,10 +76,12 @@ body.index {
       cursor: pointer;
     }
 
-    .logo &img{
-      background-color: white;
-      border-radius: 50%;
-    }
+    .logo{
+      & img{
+        background-color: white;
+        border-radius: 50%;
+      }
+    } 
   }
 
   & main {

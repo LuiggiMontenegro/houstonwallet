@@ -48,7 +48,7 @@ body.index header a {
   text-decoration: none;
   cursor: pointer;
 }
-.logo body.index headerimg {
+body.index header .logo img {
   background-color: white;
   border-radius: 50%;
 }
