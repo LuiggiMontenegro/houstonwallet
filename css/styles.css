@@ -48,6 +48,10 @@ body.index header a {
   text-decoration: none;
   cursor: pointer;
 }
+.logo body.index headerimg {
+  background-color: white;
+  border-radius: 50%;
+}
 body.index main {
   grid-area: main;
   display: flex;

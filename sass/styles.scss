@@ -75,6 +75,11 @@ body.index {
       text-decoration: none;
       cursor: pointer;
     }
+
+    .logo &img{
+      background-color: white;
+      border-radius: 50%;
+    }
   }
 
   & main {
